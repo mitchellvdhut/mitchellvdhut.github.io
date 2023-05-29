@@ -1,0 +1,64 @@
+---
+title: CRM Energiebelastingteruggaaf
+publishDate: Jul 2022
+meta:
+  title: CRM Energiebelastingteruggaaf
+  publishDate: Jul 2022
+  description: Een customer relations manager gemaakt voor energiebelastingteruggaaf.nl.
+---
+
+![Screenshot of the main screen of energiebelastingteruggaaf's CRM](/assets/images/screenshot-ebt.png)
+
+In the second year of my studies, I did an internship at [Chippr](https:chippr.dev). Together with three fellow students, we worked on the energiebelastingteruggaaf.nl (EBT) project.
+
+EBT helps people claim back energy taxes. Previously, they worked solely from an Excel file with thousands of rows and dozens of columns, making it difficult to maintain an overview. Our task was to design and develop a customer relations manager (CRM) that would make it easier to find the right customers, communicate with them, and manage documents.
+
+My main responsibilities were:
+
+- Collaborating on the UX design
+- Developing web pages
+- Implementing interactive features
+- Collaborating with the backend developer
+- Conducting code reviews
+
+## The initial design
+We started the project by doing a design sprint. We interviewed the client and the users to get a better understanding of the problem. We then created a user flow to visualize the process (which unfortunately i can't show). We also created a wireframe to get a better idea of the layout of the application. From there we quickly went to designing a high fidelity prototype. The design was worked on by two people, and I was one of them.
+![Screenshot of the main screen of energiebelastingteruggaaf's CRM](/assets/images/screenshot-hf-prototype.png)
+
+With the prototype, we did a usability test with the client and the users. We got a lot of feedback, which we used to improve the design. After that, we started developing the application.
+
+## The development
+The frontend of the application was built with [React.js](https://react.dev/) and [Ant Design v4](https://4x.ant.design/). We used [Jira](https://www.atlassian.com/software/jira) to keep track of the tasks. We used ant design because it has a lot of components that we could use out of the box. This allowed us to focus on the functionality of the application instead of the design of the components.
+Some other libraries we used were:
+ - [react-router](https://reactrouter.com/) for routing
+ - [tanstack/react-query](https://react-query.tanstack.com/) for data fetching
+ - [js-zip](https://stuk.github.io/jszip/) for creating zip files
+ - [dayjs](https://day.js.org/) for date formatting
+
+## What I worked on
+I worked on the frontend of the application. I worked on the following pages:
+
+The main page, where the user can search for addresses and see a list of which addresses might be interesting as potential customers. I wrote the code for the table and the search bar, which allows the user to search through any of the properties of an address. I also wrote the code for all the different properties that can be sorted by.
+![Screenshot of the main screen of energiebelastingteruggaaf's CRM](/assets/images/screenshot-hf-prototype.png)
+From this page the user can also import addresses from a CSV file.
+
+I worked on the table for property owners. The user can edit, and delete property owners. I wrote the code for the table and the different filters that can be applied to the table.
+
+I was also responsible for creating the page for bulk uploading files belonging to an address. The user can upload multiple files at once, and the files are automatically linked to the address in the backend (which I did not work on). I also wrote the code for the file upload component.
+![Screenshot of the bulk upload page of energiebelastingteruggaaf's CRM](/assets/images/screenshot-file-upload.png)
+
+## The result
+The result is a fully functional CRM that allows the client to manage their customers. The application is currently in use by the client and is being used to manage hundreds of customers, and thousands of potential customers.
+
+## What I learned
+ - I learned a lot about working in a team.
+ - How to effectively collaborate on a project with other developers.
+ - How to use Jira to keep track of tasks.
+ - How to work with a REAL client to get feedback on the application.
+
+I also learned a lot about writing quality code:
+ - How to use React router.
+ - How to use React query.
+ - I learned how to use a component library, specifically Ant Design.
+ - I learned a lot about using typescript
+ - I learned how to write more scalable code, by using generic types, and implementing code splitting.
