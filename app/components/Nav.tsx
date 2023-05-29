@@ -68,8 +68,8 @@ const Nav = () => {
               </NavLink>
             </motion.div>
             <motion.div variants={mobileNavListVariant} {...mobileNavExitProps}>
-              <NavLink to="/blog" className={activeStyleCallback}>
-                Blog
+              <NavLink to="/projects" className={activeStyleCallback}>
+                Projects
               </NavLink>
             </motion.div>
           </motion.div>
